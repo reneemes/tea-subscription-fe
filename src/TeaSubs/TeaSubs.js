@@ -1,7 +1,7 @@
 import './TeaSubs.css'
 
-function TeaSubs({ title, id, key, showSubDetails }) {
-  const teaImageUrl = "https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg"
+function TeaSubs({ title, id, key, showSubDetails, teaImageUrl }) {
+  // const teaImageUrl = "https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg"
 
   return (
     <div className='subscription'>

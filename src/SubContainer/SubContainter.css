@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
+  flex-wrap: wrap;
   /* width: 70%; */
   gap: 15px;
   overflow: hidden;
-  flex-direction: column;
-  align-content: flex-end;
-  align-items: flex-end;
+  /* flex-direction: column; */
+  /* align-content: flex-end; */
+  /* align-items: flex-end; */
 }

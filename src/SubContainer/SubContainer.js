@@ -4,6 +4,7 @@ import SubDetails from '../SubDetails/SubDetails.js'
 
 function SubContainer({ subscriptions, selectedSub, showSubDetails, showTeaSubs }) {
   // console.log(subscriptions, "HERE")
+  const teaImageUrl = "https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg"
 
   const showCards = subscriptions.map(sub => {
     // console.log(sub.attributes.title, "sub")
@@ -13,6 +14,7 @@ function SubContainer({ subscriptions, selectedSub, showSubDetails, showTeaSubs 
         status={sub.attributes.status} 
         id={sub.id}
         key={sub.id}
+        teaImageUrl={teaImageUrl}
         showSubDetails={() => showSubDetails(sub)}
         // deleteSub={deleteSub}
       />
@@ -23,6 +25,7 @@ function SubContainer({ subscriptions, selectedSub, showSubDetails, showTeaSubs 
     <SubDetails
       selectedSub={selectedSub}
       showTeaSubs={showTeaSubs}
+      teaImageUrl={teaImageUrl}
     />
   )
 

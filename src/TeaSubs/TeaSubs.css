@@ -1,7 +1,9 @@
 h2 {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 3vh;
   text-align: center;
   color: white;
+  margin: 0 2vw;
 }
 
 .subscription {
@@ -9,20 +11,26 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1300px;
+  flex-direction: column;
   background-color: darkgray;
   background-color: rosybrown;
+  height: 35vh;
+  max-width: 35vw;
+  min-height: 35vh;
 }
 
 .tea-photo {
-  height: 200px;
+  height: 20vh;
   flex-wrap: wrap;
 }
 
 button {
   border: none;
-  height: 5em;
-  width: 15em;
+  border-radius: 3px;
+  height: 5vh;
+  width: 15vh;
   cursor: pointer;
-  margin-right: 1em;
+  /* padding: 3px; */
+  margin: 5px; 
+  font-size: 1.5vh;
 }
