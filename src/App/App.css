@@ -41,3 +41,9 @@ form {
   height: 4vh;
   width: 15vw;
 }
+
+@media screen and (max-width: 540px) {
+  #site-search {
+    width: 35vw;
+  }
+}

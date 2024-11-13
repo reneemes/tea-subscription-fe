@@ -6,3 +6,10 @@
   gap: 15px;
   overflow: hidden;
 }
+
+@media screen and (max-width: 540px) {
+  .sub-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

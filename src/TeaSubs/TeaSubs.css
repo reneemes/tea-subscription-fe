@@ -45,3 +45,15 @@ p {
 h2 {
   cursor: pointer;
 }
+
+@media screen and (max-width: 1024px) {
+  .subscription {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .subscription {
+    width: 90%;
+  }
+}
