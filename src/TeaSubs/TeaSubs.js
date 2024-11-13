@@ -1,6 +1,6 @@
 import './TeaSubs.css'
 
-function TeaSubs({ title, status, id, key, showSubDetails, teaImageUrl, updateStatus }) {
+function TeaSubs({ title, status, id, showSubDetails, teaImageUrl, updateStatus }) {
 
   function getStatus() {
     return status ? "Active" : "Inactive";

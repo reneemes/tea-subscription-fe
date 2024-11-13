@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+<!-- <h1 align="center"> Tea Time </h1> -->
+# Tea Time
+<img src="./public/assets/home.png" alt="Home page view" width="50%">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Abstract:
+[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
 
-## Available Scripts
+This project is a React-based web application that provides a dynamic interface for managing and exploring tea subscriptions. The app fetches data from a Rails API backend, displaying a list of available tea subscriptions, with details about each subscription including title, status, pricing, and customer information.
 
-In the project directory, you can run:
+The user can interact with the subscriptions list by clicking on individual subscriptions to view detailed information, toggle the active status of a subscription, and see real-time updates without requiring a page refresh. The app handles potential API errors gracefully, providing clear feedback to the user when issues arise.
 
-### `npm start`
+### Installation Instructions:
+[//]: <> (What steps does a person have to take to get your app cloned down and running?)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Fork and clone this BE repo: 
+[Tea Time Backend Repo](https://github.com/reneemes/tea_subscription_be)
+2. `cd` into the repo
+2. Run these commands in your terminal
+  - `bundle install`
+  -  `rails db:{drop, create, migrate, seed}`
+  -  `rails s`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Fork this FE repo
+[Tea Time Frontend Repo](https://github.com/reneemes/tea-subscription-fe)
+5. `cd` into cloned repo
+6. Run `npm install`
+7. Run `npm start`
+8.  Enter `control + c` in your terminal to stop running the React app at any time
+<!-- 9. To run Cypress tests, use `npx cypress open` -->
 
-### `npm test`
+<!-- <h2 align="center"> Usage </h2> -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Preview of App:
+[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off. gifs preferred!)
+#### Browser
+<img src="./public/assets/details-view.png" alt="Home page view" width="50%">
 
-### `npm run build`
+#### Tablet
+<img src="./public/assets/tablet-view.png" alt="Home page view" width="50%">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Smartphone
+<img src="./public/assets/smartphone-view.png" alt="Home page view" width="50%">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Context:
+[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+This project was a mock technical take-home challenge designed to simulate a real-world coding assessment. The task required me to dedicate two full days, with a structured time block of 8 hours each day, to develop both the front-end and back-end components of a web application from scratch. I was responsible for designing a responsive and user-friendly interface, implementing state management with React, and creating an efficient RESTful API with Rails to handle data interactions.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Given the limited timeframe, I had to strategically prioritize building a Minimum Viable Product (MVP) to meet core functionality requirements first, while planning additional features as enhancements. This required careful decision-making to ensure that essential features were implemented without sacrificing code quality or user experience. The challenge tested my skills in full-stack development, problem-solving, and effective time management, showcasing my ability to deliver a complete and functional product under tight deadlines.
 
-### `npm run eject`
+### Tech Stack:
+BE - Ruby on Rails, tested with RSpec, SimpleCov
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+FE - Built with React and tested with Cypress
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Contributors:
+[//]: <> (Who worked on this application? Link to your GitHub. Consider also providing LinkedIn link)
+Renee Messersmith - [linkedin](https://www.linkedin.com/in/reneemessersmith/) - [gitHub](https://github.com/reneemes) - rmessersmith25@gmail.com
