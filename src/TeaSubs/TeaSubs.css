@@ -40,3 +40,8 @@ p {
   margin-top: 2vh;
   color: white;
 }
+
+.tea-photo,
+h2 {
+  cursor: pointer;
+}
