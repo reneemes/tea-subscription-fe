@@ -1,0 +1,28 @@
+h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.subscription {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1300px;
+  background-color: darkgray;
+  background-color: rosybrown;
+}
+
+.tea-photo {
+  height: 200px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  height: 5em;
+  width: 15em;
+  cursor: pointer;
+}
