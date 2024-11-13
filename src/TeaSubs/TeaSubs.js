@@ -1,6 +1,6 @@
 import './TeaSubs.css'
 
-function TeaSubs({ title, id, key }) {
+function TeaSubs({ title, id, key, showSubDetails }) {
   const teaImageUrl = "https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg"
 
   return (
@@ -9,6 +9,7 @@ function TeaSubs({ title, id, key }) {
         src={teaImageUrl}
         alt="yellow flowers next to a glass cup of tea"
         className="tea-photo"
+        onClick={showSubDetails}
       />
       <h2>{title}</h2>
       <button>CANCLE SUBSCRIPTION</button>
