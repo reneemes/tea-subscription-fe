@@ -1,34 +1,45 @@
-// import logo from '../logo.svg';
 import './App.css';
 import SubContainer from '../SubContainer/SubContainer.js'
 import { useEffect, useState } from 'react';
 
 function App() {
-  // const dummy = [
-  //           {"id": "1", "type": "subscription", "attributes": {
-  //               "title": "Monthly Green Tea Subscription", "price": 10.99, "status": true, "frequency": "monthly"}
-  //            }];
   const [selectedSub, setSelectedSub] = useState(null);
-
   const [subscriptions, setSubscriptions] = useState([]);
-  console.log(subscriptions, '<><><> subscriptions')
 
   useEffect(() => {
     fetch("http://localhost:3001/api/v1/subscriptions")
     .then(response => response.json())
-    .then(data => {console.log('data', data.data); setSubscriptions(data.data)})
+    .then(data => {setSubscriptions(data.data)})
   },[]);
 
   function showSubDetails(sub) {
-    fetch(`http://localhost:3001/api/v1/subscriptions/${sub.id}`)
-    .then(response => response.json())
-    console.log("showMovieDetails CLICK!")
     setSelectedSub(sub);
   };
 
   function showTeaSubs() {
-    console.log("showTeaSubs CLICK!")
     setSelectedSub(null);
+  };
+
+  function updateStatus(id) {
+    console.log(id)
+    fetch(`http://localhost:3001/api/v1/subscriptions/${id}`, {
+      method: 'PATCH',
+      headers: {
+        "Content-Type": "application/json",
+      }
+    })
+    .then((response) => response.json())
+    .then(specificSub => {
+      const newSubs = subscriptions.map(currentSub => {
+        if (currentSub.id === specificSub.data.id) {
+          return specificSub.data;
+        } else {
+          return currentSub;
+        }
+      });
+      setSubscriptions(newSubs);
+      alert(`Active status for subscription ID: ${id} has been changed`);
+    });
   };
 
   return (
@@ -40,6 +51,7 @@ function App() {
           subscriptions={subscriptions}
           selectedSub={selectedSub}
           showSubDetails={showSubDetails}
+          updateStatus={updateStatus}
         />
     </main>
   );
