@@ -1,6 +1,7 @@
 <!-- <h1 align="center"> Tea Time </h1> -->
 # Tea Time
 <img src="./public/assets/home.png" alt="Home page view" width="50%">
+<img src="./public/assets/component.png" alt="Component diagram" width="50%">
 
 ### Abstract:
 [//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
@@ -33,13 +34,13 @@ The user can interact with the subscriptions list by clicking on individual subs
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off. gifs preferred!)
 #### Browser
-<img src="./public/assets/details-view.png" alt="Home page view" width="50%">
+<img src="./public/assets/details-view.png" alt="Browser view" width="50%">
 
 #### Tablet
-<img src="./public/assets/tablet-view.png" alt="Home page view" width="50%">
+<img src="./public/assets/tablet-view.png" alt="Tablet view" width="50%">
 
 #### Smartphone
-<img src="./public/assets/smartphone-view.png" alt="Home page view" width="50%">
+<img src="./public/assets/smartphone-view.png" alt="Smartphone view" width="50%">
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
