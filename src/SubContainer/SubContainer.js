@@ -2,12 +2,10 @@ import TeaSubs from "../TeaSubs/TeaSubs";
 import './SubContainter.css'
 import SubDetails from '../SubDetails/SubDetails.js'
 
-function SubContainer({ subscriptions, selectedSub, showSubDetails }) {
-  // console.log(subscriptions, "HERE")
+function SubContainer({ subscriptions, selectedSub, showSubDetails, updateStatus }) {
   const teaImageUrl = "https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg"
 
   const showCards = subscriptions.map(sub => {
-    // console.log(sub.attributes.title, "sub")
     return (
       <TeaSubs 
         title={sub.attributes.title} 
@@ -16,7 +14,7 @@ function SubContainer({ subscriptions, selectedSub, showSubDetails }) {
         key={sub.id}
         teaImageUrl={teaImageUrl}
         showSubDetails={() => showSubDetails(sub)}
-        // deleteSub={deleteSub}
+        updateStatus={updateStatus}
       />
     )
   })
@@ -30,9 +28,7 @@ function SubContainer({ subscriptions, selectedSub, showSubDetails }) {
 
   return (
     <div className='sub-container'>
-      {/* <p>SubContainer</p> */}
       { selectedSub ? showDetails : showCards }
-      {/* {showCards} */}
     </div>
   );
 };

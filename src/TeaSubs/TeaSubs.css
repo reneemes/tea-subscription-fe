@@ -1,5 +1,4 @@
 h2 {
-  /* font-size: 30px; */
   font-size: 3vh;
   text-align: center;
   color: white;
@@ -7,19 +6,20 @@ h2 {
 }
 
 .subscription {
-  border: 1px solid black;
+  border: 0.5px solid whitesmoke;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   background-color: darkgray;
   background-color: rosybrown;
-  height: 35vh;
-  max-width: 35vw;
-  min-height: 35vh;
+  width: 35vw;
 }
 
 .tea-photo {
+  margin-top: 1vh;
   height: 20vh;
   flex-wrap: wrap;
 }
@@ -30,7 +30,13 @@ button {
   height: 5vh;
   width: 15vh;
   cursor: pointer;
-  /* padding: 3px; */
-  margin: 5px; 
-  font-size: 1.5vh;
+  margin: 1vh; 
+  font-size: 2vh;
+}
+
+p {
+  font-size: 2vh;
+  text-align: center;
+  margin-top: 2vh;
+  color: white;
 }

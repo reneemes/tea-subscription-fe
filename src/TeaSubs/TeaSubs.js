@@ -1,18 +1,22 @@
 import './TeaSubs.css'
 
-function TeaSubs({ title, id, key, showSubDetails, teaImageUrl }) {
-  // const teaImageUrl = "https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg"
+function TeaSubs({ title, status, id, key, showSubDetails, teaImageUrl, updateStatus }) {
+
+  function getStatus() {
+    return status ? "Active" : "Inactive";
+  }
 
   return (
     <div className='subscription'>
       <img
         src={teaImageUrl}
-        alt="yellow flowers next to a glass cup of tea"
+        alt="yellow flowers next to a glass teacup"
         className="tea-photo"
         onClick={showSubDetails}
       />
       <h2>{title}</h2>
-      <button>CANCLE SUBSCRIPTION</button>
+      <p>Currently: {getStatus()}</p>
+      <button onClick={(() => updateStatus(id))}>Toggle Status</button>
     </div>
   );
 };
