@@ -15,7 +15,8 @@ function TeaSubs({ title, status, id, key, showSubDetails, teaImageUrl, updateSt
         onClick={showSubDetails}
       />
       <h2>{title}</h2>
-      <p>Currently: {getStatus()}</p>
+      <p>Subscription ID: {id}</p>
+      <p>Status: {getStatus()}</p>
       <button onClick={(() => updateStatus(id))}>Toggle Status</button>
     </div>
   );

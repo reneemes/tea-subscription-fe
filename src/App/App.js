@@ -76,7 +76,8 @@ function App() {
     <main className="App">
       <header className="App-header">
         <h1 onClick={(() => {showTeaSubs()})}>Tea Time</h1>
-        {searchBar}
+        {/* {searchBar} */}
+        {selectedSub === null && searchBar}
       </header>
         <SubContainer
           subscriptions={subscriptions}

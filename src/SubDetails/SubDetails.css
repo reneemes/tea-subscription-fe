@@ -56,7 +56,8 @@ p {
   width: 100%;
   padding: 15px;
   border-radius: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  background-color: #A17A7A;
 }
 
 .sub-info {
