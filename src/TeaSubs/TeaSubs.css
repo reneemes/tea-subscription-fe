@@ -37,6 +37,11 @@ button {
 p {
   font-size: 2vh;
   text-align: center;
-  margin-top: 2vh;
+  margin-top: 1.5vh;
   color: white;
+}
+
+.tea-photo,
+h2 {
+  cursor: pointer;
 }

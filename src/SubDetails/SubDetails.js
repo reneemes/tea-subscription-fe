@@ -1,15 +1,24 @@
 import { useEffect, useState } from 'react';
 import './SubDetails.css'
 
-function SubDetails({ selectedSub, teaImageUrl }) {
+function SubDetails({ selectedSub, teaImageUrl, setError }) {
   const [subDetails, setSubDetails] = useState();
   const sub = selectedSub.attributes
   const id = parseInt(selectedSub.id)
 
   useEffect(() => {
     fetch(`http://localhost:3001/api/v1/subscriptions/${id}`)
-    .then(response => response.json())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(response.status); 
+      }
+      return response.json()
+    })
     .then(data => setSubDetails(data))
+    .catch(error => {
+      console.log(error)
+      setError('Oops! Something went wrong! Please try again in a couple minutes.')
+    })
   },[]);
 
   const customer = subDetails?.attributes?.customer || {};
