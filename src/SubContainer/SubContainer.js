@@ -2,7 +2,7 @@ import TeaSubs from "../TeaSubs/TeaSubs";
 import './SubContainter.css'
 import SubDetails from '../SubDetails/SubDetails.js'
 
-function SubContainer({ subscriptions, selectedSub, showSubDetails, updateStatus }) {
+function SubContainer({ subscriptions, selectedSub, showSubDetails, updateStatus, setError }) {
   const teaImageUrl = "https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg"
 
   const showCards = subscriptions.map(sub => {
@@ -23,6 +23,7 @@ function SubContainer({ subscriptions, selectedSub, showSubDetails, updateStatus
     <SubDetails
       selectedSub={selectedSub}
       teaImageUrl={teaImageUrl}
+      setError={setError}
     />
   )
 
