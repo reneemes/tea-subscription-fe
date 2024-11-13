@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './SubDetails.css'
 
-function SubDetails({ selectedSub, showTeaSubs, teaImageUrl }) {
+function SubDetails({ selectedSub, teaImageUrl }) {
   const [subDetails, setSubDetails] = useState();
   const sub = selectedSub.attributes
   const id = parseInt(selectedSub.id)

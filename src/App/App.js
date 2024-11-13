@@ -34,13 +34,12 @@ function App() {
   return (
     <main className="App">
       <header className="App-header">
-        <h1>Tea Time</h1>
+        <h1 onClick={(() => {showTeaSubs()})}>Tea Time</h1>
       </header>
         <SubContainer
           subscriptions={subscriptions}
           selectedSub={selectedSub}
           showSubDetails={showSubDetails}
-          showTeaSubs={showTeaSubs}
         />
     </main>
   );

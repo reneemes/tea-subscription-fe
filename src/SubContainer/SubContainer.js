@@ -2,7 +2,7 @@ import TeaSubs from "../TeaSubs/TeaSubs";
 import './SubContainter.css'
 import SubDetails from '../SubDetails/SubDetails.js'
 
-function SubContainer({ subscriptions, selectedSub, showSubDetails, showTeaSubs }) {
+function SubContainer({ subscriptions, selectedSub, showSubDetails }) {
   // console.log(subscriptions, "HERE")
   const teaImageUrl = "https://images.pexels.com/photos/1638280/pexels-photo-1638280.jpeg"
 
@@ -24,7 +24,6 @@ function SubContainer({ subscriptions, selectedSub, showSubDetails, showTeaSubs 
   const showDetails = (
     <SubDetails
       selectedSub={selectedSub}
-      showTeaSubs={showTeaSubs}
       teaImageUrl={teaImageUrl}
     />
   )
