@@ -20,6 +20,7 @@ function App() {
     })
     .then(data => {setSubscriptions(data.data); setAllSubscriptions(data.data)})
     .catch(error => {
+      console.log(error)
       setError('Oops! Something went wrong! Please try again in a couple minutes.')
     })
   },[]);
@@ -33,7 +34,6 @@ function App() {
   };
 
   function updateStatus(id) {
-    console.log(id)
     fetch(`http://localhost:3001/api/v1/subscriptions/${id}`, {
       method: 'PATCH',
       headers: {
@@ -70,7 +70,6 @@ function App() {
       setSubscriptions(allSubscriptions)
     } else {
       const filteredSubs = allSubscriptions.filter(sub => {
-        console.log(sub.attributes.title, "searching here")
         return sub.attributes.title.toLowerCase().includes(search.toLowerCase())
       })
       setSubscriptions(filteredSubs)
